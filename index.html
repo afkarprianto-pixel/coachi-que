@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coachi-Que - Temukan Guru & Pelatih Terbaik</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1 class="logo">Coachi<span class="logo-highlight">-Que</span></h1>
+            </div>
+            
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="#beranda" class="nav-link">Beranda</a>
+                <a href="#cari-guru" class="nav-link">Cari Guru</a>
+                <a href="#tentang" class="nav-link">Tentang</a>
+                <a href="#kontak" class="nav-link">Kontak</a>
+            </div>
+            
+            <div class="navbar-auth">
+                <button class="btn-theme" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <a href="#login" class="btn btn-outline">Masuk</a>
+                <a href="#register" class="btn btn-primary">Daftar</a>
+            </div>
+            
+            <div class="navbar-toggle" id="navbarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="beranda">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">
+                    Temukan Guru <br>
+                    & <span class="highlight">Pelatih</span> Terbaik
+                </h2>
+                <p class="hero-subtitle">
+                    Akses eksklusif ke mentor profesional untuk akademik, olahraga, dan seni. 
+                    Mulai perjalanan belajar Anda hari ini.
+                </p>
+                
+                <div class="search-container">
+                    <div class="search-box">
+                        <input 
+                            type="text" 
+                            class="search-input" 
+                            placeholder="Cari keahlian atau nama..."
+                            id="searchInput"
+                        >
+                    </div>
+                    <div class="location-box">
+                        <input 
+                            type="text" 
+                            class="location-input" 
+                            placeholder="Lokasi / Online"
+                            id="locationInput"
+                        >
+                    </div>
+                    <button class="btn btn-search" id="searchBtn">
+                        Cari Sekarang
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="placeholder-image">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#f0f0f0"/>
+                        <circle cx="200" cy="100" r="50" fill="#ff6b35"/>
+                        <path d="M 150 180 Q 200 150 250 180" stroke="#ff6b35" stroke-width="3" fill="none"/>
+                        <circle cx="120" cy="220" r="30" fill="#4ecdc4"/>
+                        <circle cx="280" cy="240" r="35" fill="#ffd93d"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="cari-guru">
+        <div class="container">
+            <h2 class="section-title">Kategori Populer</h2>
+            <p class="section-subtitle">Pilih bidang yang ingin Anda pelajari</p>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">📚</div>
+                    <h3>Akademik</h3>
+                    <p>Matematika, Bahasa, Sains</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">⚽</div>
+                    <h3>Olahraga</h3>
+                    <p>Sepak Bola, Badminton, Renang</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h3>Seni</h3>
+                    <p>Melukis, Musik, Tari</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">💻</div>
+                    <h3>Teknologi</h3>
+                    <p>Programming, Web Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="tentang">
+        <div class="container">
+            <h2 class="section-title">Mengapa Memilih Kami?</h2>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <h3>Mentor Terverifikasi</h3>
+                    <p>Semua guru dan pelatih telah melalui verifikasi ketat untuk memastikan kualitas.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <h3>Fleksibel & Nyaman</h3>
+                    <p>Pilih waktu dan tempat yang sesuai dengan jadwal Anda.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <h3>Harga Kompetitif</h3>
+                    <p>Berbagai pilihan harga yang terjangkau untuk semua kalangan.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">04</div>
+                    <h3>Support 24/7</h3>
+                    <p>Tim kami siap membantu Anda kapan saja dibutuhkan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="kontak">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Siap Memulai Perjalanan Belajar Anda?</h2>
+                <p>Bergabunglah dengan ribuan pelajar yang telah menemukan guru impian mereka</p>
+                <button class="btn btn-primary btn-large" id="ctaButton">
+                    Mulai Sekarang
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Coachi-Que</h3>
+                    <p>Platform mencari guru dan pelatih terbaik untuk kesuksesan Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#cari-guru">Cari Guru</a></li>
+                        <li><a href="#tentang">Tentang</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <ul>
+                        <li>Email: info@coachi-que.com</li>
+                        <li>Telepon: +62 123 4567 890</li>
+                        <li>Alamat: Jakarta, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Coachi-Que. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/utils.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

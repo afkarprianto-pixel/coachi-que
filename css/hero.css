@@ -1,0 +1,300 @@
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
+.hero {
+    padding: var(--spacing-3xl) 0;
+    background: linear-gradient(135deg, var(--light-color) 0%, #f5f5f5 100%);
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+}
+
+.hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+/* ========================================
+   HERO CONTENT
+   ======================================== */
+
+.hero-content {
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+.hero-title {
+    font-size: var(--font-size-3xl);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-color);
+}
+
+.hero-title .highlight {
+    color: var(--primary-color);
+    font-style: italic;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--text-light);
+    margin-bottom: var(--spacing-2xl);
+    line-height: 1.8;
+}
+
+/* ========================================
+   SEARCH CONTAINER
+   ======================================== */
+
+.search-container {
+    display: flex;
+    gap: var(--spacing-md);
+    background-color: white;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.search-box,
+.location-box {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+}
+
+.search-input,
+.location-input {
+    flex: 1;
+    border: none;
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-base);
+    background: transparent;
+}
+
+.search-input:focus,
+.location-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.search-input::placeholder,
+.location-input::placeholder {
+    color: var(--text-light);
+}
+
+.btn-search {
+    padding: var(--spacing-md) var(--spacing-2xl);
+    border: none;
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    white-space: nowrap;
+}
+
+/* ========================================
+   HERO IMAGE / PLACEHOLDER
+   ======================================== */
+
+.hero-image {
+    animation: fadeInRight 0.8s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.placeholder-image {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1;
+}
+
+.placeholder-image svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 10px 30px rgba(255, 107, 53, 0.15));
+}
+
+/* ========================================
+   SECTION TITLE & SUBTITLE
+   ======================================== */
+
+.section-title {
+    font-size: var(--font-size-2xl);
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-2xl);
+}
+
+/* ========================================
+   CATEGORIES SECTION
+   ======================================== */
+
+.categories {
+    padding: var(--spacing-3xl) 0;
+    background-color: var(--light-color);
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.category-card {
+    background-color: white;
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-top: 4px solid var(--primary-color);
+}
+
+.category-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.category-card h3 {
+    color: var(--text-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.category-card p {
+    color: var(--text-light);
+    font-size: var(--font-size-sm);
+}
+
+/* ========================================
+   FEATURES SECTION
+   ======================================== */
+
+.features {
+    padding: var(--spacing-3xl) 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.feature-item {
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-lg);
+    background-color: var(--light-color);
+    transition: all var(--transition-base);
+    border-left: 4px solid var(--primary-color);
+}
+
+.feature-item:hover {
+    background-color: white;
+    box-shadow: var(--shadow-lg);
+    transform: translateX(8px);
+}
+
+.feature-number {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.feature-item h3 {
+    color: var(--text-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.feature-item p {
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* ========================================
+   CTA SECTION
+   ======================================== */
+
+.cta {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #e85a2c 100%);
+    color: white;
+    text-align: center;
+    padding: var(--spacing-3xl) 0;
+}
+
+.cta-content h2 {
+    font-size: var(--font-size-2xl);
+    color: white;
+    margin-bottom: var(--spacing-md);
+}
+
+.cta-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.btn-large {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.btn-large:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
