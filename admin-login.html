@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Admin - Coachi-Que</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/admin-login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <h1 class="login-title">Coachi<span class="highlight">-Que</span></h1>
+                <p class="login-subtitle">Admin Panel</p>
+            </div>
+
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        class="form-input"
+                        placeholder="Masukkan username"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-wrapper">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            class="form-input"
+                            placeholder="Masukkan password"
+                            required
+                        >
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            👁️
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox">
+                        <input type="checkbox" id="rememberMe">
+                        <span>Ingat saya</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-login">
+                    Masuk
+                </button>
+
+                <div class="login-error" id="loginError" style="display: none;"></div>
+            </form>
+
+            <div class="login-footer">
+                <p>Kembali ke <a href="index.html">Beranda</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/admin-auth.js"></script>
+</body>
+</html>
